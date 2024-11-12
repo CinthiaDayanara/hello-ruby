@@ -1,2 +1,1 @@
-web: ruby app/hello_world.rb
-
+web: ruby hello_world.rb
