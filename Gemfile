@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'rails', '6.1.4'  # Ajusta según la versión que estés usando.
+gem 'rails', '6.1.4'
+gem 'puma', '~> 5.0'
