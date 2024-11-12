@@ -1,2 +1,3 @@
 source 'https://rubygems.org'
-gem 'rack', '~> 2.2'
+
+gem 'rails', '6.1.4'  # Ajusta según la versión que estés usando.
