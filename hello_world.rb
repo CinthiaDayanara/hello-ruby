@@ -1,8 +1,8 @@
 # hello_world.rb
 require 'sinatra'
 
-# Obtén el puerto de la variable de entorno o usa un puerto por defecto
-port = ENV['PORT'] || 3000  # Usamos 3000 si no está definido el puerto en Railway
+# Asegúrate de que el valor del puerto sea numérico y esté definido
+port = ENV['PORT'] ? ENV['PORT'].to_i : 3000  # Usa 3000 si no se encuentra el puerto
 
 # Establece el puerto para la aplicación
 set :port, port
