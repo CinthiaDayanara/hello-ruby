@@ -1,12 +1,10 @@
-# hello_world.rb
+# app/hello_world.rb
+
 require 'sinatra'
 
-# Asegúrate de que el valor del puerto sea numérico y esté definido
-port = ENV['PORT'] ? ENV['PORT'].to_i : 3000  # Usa 3000 si no se encuentra el puerto
-
-# Establece el puerto para la aplicación
-set :port, port
+# Configura el puerto de Railway (si está disponible, de lo contrario usa el puerto 4567)
+set :port, ENV['PORT'] || 4567
 
 get '/' do
-  'Hello, World!'
+  'Hello, World-ruby!'
 end

@@ -1,1 +1,2 @@
-web: ruby hello_world.rb -p $PORT
+web: ruby app/hello_world.rb
+
